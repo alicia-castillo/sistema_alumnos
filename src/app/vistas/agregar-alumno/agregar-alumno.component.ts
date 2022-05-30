@@ -3,6 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Alumno } from 'src/app/alumno';
 import { ListadoAlumnosService } from 'src/app/servicios/servicio_alumnos/listado-alumnos.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-agregar-alumno',
@@ -30,18 +31,15 @@ export class AgregarAlumnoComponent implements OnInit {
 
   agregarAlumno(){
     this.api.agregarAlumno(this.alumno).subscribe(data=>{
-      console.log(data);
-      alert("empleado guardado");
+      //console.log(data);
+      Swal.fire('ALUMNO GUARDADO CON ÉXITO')
     }, error=>{
-      alert("ERROR EN LOS DATOS");
+      Swal.fire('ERROR EN LOS DATOS')
       console.log(error)
     });
   }
 
   onSubmit(form: any){
-    console.log("este es el form")
-    console.log(form);
-
     this.agregarAlumno();
   }
 }

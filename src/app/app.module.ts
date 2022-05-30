@@ -8,7 +8,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AgregarAlumnoComponent } from './vistas/agregar-alumno/agregar-alumno.component';
 import { AuthGuard } from './auth.guard';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    NgbModule
+    //NgbModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]

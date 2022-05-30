@@ -22,19 +22,6 @@ export class ListasAlumnosComponent implements OnInit {
     console.log("entra a get data");
     this.api.getAlumnos().subscribe(data=>{
       this.alumnos = data;
-      /*[
-        {
-          id_alumno: 1,
-          nombre: "alicia",
-          apellido_paterno: "castillo",
-          apellido_materno: "juarez",
-          fecha_nacimiento: '10/12/1995',
-          grado_estudios: "Licenciatura",
-          sexo: "F",
-          email: "correo@com",
-          telefono_alumno: "string"
-        }
-      ];*/
       console.log(data);
       
     });

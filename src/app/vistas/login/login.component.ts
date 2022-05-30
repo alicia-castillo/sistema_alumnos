@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-login',
@@ -30,7 +31,7 @@ export class LoginComponent implements OnInit {
       localStorage.setItem("logged", "true");
       this.router.navigate(["inicio"]);
     }else{
-      alert("ERROR CREDENCIALES INCORRECTAS INCORRECTAS");
+      Swal.fire('ERROR CREDENCIALES INCORRECTAS')
     }
   }
 

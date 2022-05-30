@@ -1,12 +1,10 @@
 #container{
-    width: 90%;
+    width: 95%;
     border: 2px solid rgb(238, 238, 238);
     border-radius: 15px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    margin-top: 50px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 #lista_titulo{
@@ -20,7 +18,7 @@
 }
 
 #container_lista{
-    overflow: scroll;
+    overflow-x: scroll;
 }
 
 @media screen and (max-width: 600px) {
@@ -28,10 +26,8 @@
         width: 90%;
         border: 2px solid rgb(238, 238, 238);
         border-radius: 15px;
-        position: absolute;
-        left: 50%;
-        top: 25%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        margin-top: 50px;
+    margin-left: 2%;
+    margin-right: 2%;
     }
   }
