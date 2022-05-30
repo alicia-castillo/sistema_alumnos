@@ -1,0 +1,47 @@
+html{
+    background:linear-gradient(135deg, #c3ec52 0%,#0ba29d 100%);
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 50%;
+    border: solid 2px #0ba29d;
+    border-radius: 25px;
+    background:linear-gradient(135deg, #c3ec52 0%,#0ba29d 100%);
+}
+
+.titulo_inicio{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.parrafo{
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        background: none;
+        border: none;
+    }
+
+    .titulo_inicio{
+        width: 100%;
+        text-align: center;
+        color: #0ba29d;
+        font-weight: bold;
+
+    }
+
+    .parrafo{
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+    }
+  }

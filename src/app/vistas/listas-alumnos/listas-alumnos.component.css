@@ -1,0 +1,37 @@
+#container{
+    width: 90%;
+    border: 2px solid rgb(238, 238, 238);
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#lista_titulo{
+    width: 100%;
+    text-align: center;
+    margin-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    border-bottom: solid 1px black;
+}
+
+#container_lista{
+    overflow: scroll;
+}
+
+@media screen and (max-width: 600px) {
+    #container{
+        width: 90%;
+        border: 2px solid rgb(238, 238, 238);
+        border-radius: 15px;
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+  }

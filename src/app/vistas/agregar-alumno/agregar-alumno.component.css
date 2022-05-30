@@ -1,0 +1,14 @@
+.titulo_h1{
+    margin: 1%;
+    padding: 1%;
+    border-bottom: solid 1px black;
+}
+
+#form_alumno{
+    padding: 1%;
+}
+
+#agrega_alumno_btn{
+    margin: 1%;
+    max-width: 350px;
+}

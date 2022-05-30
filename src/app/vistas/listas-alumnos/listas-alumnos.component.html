@@ -1,0 +1,33 @@
+<app-menu></app-menu>
+<div id="container">
+    <h1 id="lista_titulo">Lista de alumnos registrados</h1>
+<div id="container_lista">
+   
+<table id="tabla_alumnos" class="table table-hover table-responsive">
+<thead>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Apellido Paterno</th>
+    <th>Apellido Materno</th>
+    <th>Fecha Nacimiento</th>
+    <th>Correo</th>
+    <th>Teléfono</th>
+    <th>Grado de Estudio</th>
+    <th>Género</th>
+</thead>
+<tbody>
+<tr *ngFor="let alumno of alumnos">
+<td>{{ alumno.id_alumno }}</td>
+<td>{{ alumno.nombre }}</td>
+<td>{{ alumno.apellido_paterno }}</td>
+<td>{{ alumno.apellido_materno }}</td>
+<td>{{ alumno.fecha_nacimiento }}</td>
+<td>{{ alumno.email }}</td>
+<td>{{ alumno.telefono_alumno }}</td>
+<td>{{ alumno.grado_estudios }}</td>
+<td>{{ alumno.sexo }}</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
